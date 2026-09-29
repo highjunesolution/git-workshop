@@ -14,3 +14,93 @@ git commit
 
 git log
 = ดูประวัติ
+
+_______________________________________________
+คำสั่งทั้งหมดใน Workshop 01
+
+D:\skill\git\git-workshop>git init
+Initialized empty Git repository in D:/skill/git/git-workshop/.git/
+
+D:\skill\git\git-workshop>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        context.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\skill\git\git-workshop>git add context.md
+warning: in the working copy of 'context.md', LF will be replaced by CRLF the next time Git touches it
+
+D:\skill\git\git-workshop>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   context.md
+
+
+D:\skill\git\git-workshop>git commit -m "docs: add context"
+[master (root-commit) 513e1e1] docs: add context
+ 1 file changed, 676 insertions(+)
+ create mode 100644 context.md
+
+D:\skill\git\git-workshop>git log
+commit 513e1e173e92fc4f08979a8ea74de868bb962e8b (HEAD -> master)
+Author: highjunesolution <highjunesolution@gmail.com>
+Date:   Tue Sep 29 11:17:15 2026 +0700
+
+    docs: add context
+
+D:\skill\git\git-workshop>git log --oneline
+513e1e1 (HEAD -> master) docs: add context
+
+D:\skill\git\git-workshop>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\skill\git\git-workshop>git add README.md
+
+D:\skill\git\git-workshop>git commit -m "docs: add README"
+[master 473b385] docs: add README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+D:\skill\git\git-workshop>git add README.md
+
+D:\skill\git\git-workshop>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+D:\skill\git\git-workshop>git commit -m "docs: update workshop description"
+[master 7948e35] docs: update workshop description
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\skill\git\git-workshop>git log --oneline
+7948e35 (HEAD -> master) docs: update workshop description
+473b385 docs: add README
+513e1e1 docs: add context
+
+D:\skill\git\git-workshop>git add .
+
+D:\skill\git\git-workshop>git commit -m "chore: organized folder"
+[master 598747d] chore: organized folder
+ 2 files changed, 16 insertions(+)
+ rename README.md => workshop01_basic/README.md (100%)
+ create mode 100644 workshop01_basic/note.txt
+
+D:\skill\git\git-workshop>
+
+_______________________________________________
