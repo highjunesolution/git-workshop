@@ -1,1 +1,1 @@
-Get started GIF Diff
+Workshop 02 is about git diff

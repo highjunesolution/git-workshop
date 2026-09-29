@@ -1,0 +1,5 @@
+git diff
+= ดูสิ่งที่แก้แล้ว แต่ยังไม่ได้ git add
+
+git diff --staged
+= ดูสิ่งที่ git add แล้ว และกำลังจะ commit
