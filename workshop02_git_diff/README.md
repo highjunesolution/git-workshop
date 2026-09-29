@@ -1,0 +1,1 @@
+Get started GIF Diff
