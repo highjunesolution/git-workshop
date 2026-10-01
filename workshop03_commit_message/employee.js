@@ -1,1 +1,5 @@
-console.log("Employee Service")
+function getEmployee() {
+    return "Employee found"
+}
+
+console.log(getEmployee())
