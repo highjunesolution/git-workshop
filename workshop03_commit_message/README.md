@@ -1,0 +1,1 @@
+Login function supports username validation.
