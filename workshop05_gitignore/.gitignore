@@ -1,3 +1,33 @@
+
+# Ignore ไฟล์เฉพาะชื่อ
 .env
-app.log
+config.local.json
+
+# Ignore ตามนามสกุล
+*.log
+*.tmp
+*.bak
+
+# Ignore folder
+node_modules/
 logs/
+dist/
+
+# Ignore ทุกไฟล์ใน folder ยกเว้นบางไฟล์
+logs/*
+!logs/keepme
+
+
+# .gitignore สำหรับ Node.js
+# ถ้าเป็น Node.js / Express:
+node_modules/
+.env
+.env.*
+!.env.example
+logs/
+*.log
+dist/
+coverage/
+
+# .gitignore ไม่ช่วยไฟล์ที่เคยถูก track แล้ว
+secret.txt
