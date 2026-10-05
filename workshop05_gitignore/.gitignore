@@ -31,3 +31,5 @@ coverage/
 
 # .gitignore ไม่ช่วยไฟล์ที่เคยถูก track แล้ว
 secret.txt
+
+temp/
