@@ -1,6 +1,6 @@
 
 # Ignore ไฟล์เฉพาะชื่อ
-.env
+# .env
 config.local.json
 
 # Ignore ตามนามสกุล
@@ -21,7 +21,7 @@ logs/*
 # .gitignore สำหรับ Node.js
 # ถ้าเป็น Node.js / Express:
 node_modules/
-.env
+# .env
 .env.*
 !.env.example
 logs/
