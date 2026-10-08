@@ -21,4 +21,4 @@ const getUser = (id:number):Users | null => {
     return users.find((u)=>u.id === id) ?? null;
 }
 
-const badFunction = ()=> new Error();
+export const badFunction = (message:string)=> new Error(message);
