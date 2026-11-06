@@ -1,1 +1,1 @@
-const appName = "Employee System";
+const appName = "Internal Employee System";
