@@ -1,5 +1,5 @@
 function getEmployeeName(){
-    return "Jirayu";
+    return "Tony";
 }
 
 console.log(getEmployeeName())
