@@ -1,24 +1,42 @@
-# Git Workshop
+# Git Roadmap Workshop
 
 <p align="center">
-  <strong>เรียนรู้ Git จากการลงมือทำ ตั้งแต่ First Commit ไปจนถึง Branch, Merge Conflict และ Stash</strong>
+  <strong>เรียนรู้ Git จากการลงมือทำ ตั้งแต่ First Commit ไปจนถึง workflow สำหรับการทำงานร่วมกับทีม</strong>
 </p>
 
 <p align="center">
   <img alt="Git" src="https://img.shields.io/badge/Git-Workshop-F05032?logo=git&logoColor=white">
   <img alt="Hands-on" src="https://img.shields.io/badge/Learning-Hands--on-2563EB">
-  <img alt="Workshops" src="https://img.shields.io/badge/Workshops-9-16A34A">
+  <img alt="Available workshops" src="https://img.shields.io/badge/Workshops-9%20of%2025-16A34A">
+  <img alt="Available phases" src="https://img.shields.io/badge/Phases-3%20of%208-7C3AED">
 </p>
 
 ---
 
 ## เกี่ยวกับโปรเจกต์
 
-Repository นี้รวบรวมแบบฝึกหัด Git สำหรับผู้เริ่มต้น โดยเน้นการเข้าใจหลักการผ่านสถานการณ์ที่พบได้จริงในการพัฒนาซอฟต์แวร์ ผู้เรียนจะได้ทดลองใช้คำสั่งด้วยตนเอง พร้อมเรียนรู้วิธีตรวจสอบและแก้ไขข้อผิดพลาดอย่างเป็นระบบ
+Repository นี้เป็นหลักสูตร Git แบบลงมือปฏิบัติสำหรับผู้เริ่มต้น วางแผนเนื้อหาไว้ทั้งหมด **25 Workshop ใน 8 Phase** ตั้งแต่พื้นฐาน Git ไปจนถึง GitHub, การทำงานร่วมกับทีม, Release และหัวข้อระดับ Professional
 
-เนื้อหาเรียงลำดับจากพื้นฐานไปสู่ workflow ที่ใช้ในการทำงานร่วมกับทีม จึงสามารถเรียนตามลำดับหรือเลือกทบทวนเฉพาะหัวข้อได้
+ปัจจุบันมีบทเรียนพร้อมใช้งานถึง **Workshop 09** ครอบคลุม 3 Phase แรกและพื้นฐานการใช้ Git บน Local Repository ได้แก่ Commit, Diff, Staging, Undo, Branch, Merge Conflict และ Stash ส่วนเนื้อหา Remote Repository และ workflow ขั้นสูงอยู่ในแผนพัฒนาลำดับถัดไป
 
-## สิ่งที่จะได้เรียนรู้
+ดูขอบเขตหลักสูตรทั้งหมดได้ที่ [Git Roadmap](context.md)
+
+## สถานะหลักสูตร
+
+| Phase | Workshop | เนื้อหา | สถานะ |
+|:--:|:--:|---|:--:|
+| 1 | 01–03 | พื้นฐาน Git, Diff และ Commit ที่มีคุณภาพ | **พร้อมเรียน** |
+| 2 | 04–06 | Staging, `.gitignore` และการย้อนการเปลี่ยนแปลง | **พร้อมเรียน** |
+| 3 | 07–09 | Branch, Merge Conflict และ Stash | **พร้อมเรียน** |
+| 4 | 10–12 | GitHub, Remote Repository และ Pull Request | ตาม Roadmap |
+| 5 | 13–16 | Git กับ Node.js, Prisma, ASP.NET และ Legacy Project | ตาม Roadmap |
+| 6 | 17–19 | Team Workflow, Tag, Release และ Hotfix | ตาม Roadmap |
+| 7 | 20–22 | การแก้ข้อผิดพลาด Git ที่พบบ่อย | ตาม Roadmap |
+| 8 | 23–25 | History, Rebase และ GitHub Actions | ตาม Roadmap |
+
+> **Current milestone:** เรียนรู้ workflow ฝั่ง Local Git ครบตั้งแต่การสร้าง Commit ไปจนถึงการพักงานชั่วคราวด้วย Stash
+
+## ผลลัพธ์จากบทเรียนปัจจุบัน
 
 - เข้าใจ Working Directory, Staging Area และ Repository
 - ตรวจสอบการเปลี่ยนแปลงก่อน Commit ด้วย `git diff`
@@ -27,9 +45,9 @@ Repository นี้รวบรวมแบบฝึกหัด Git สำห�
 - แยกงานด้วย Branch และรวมงานกลับด้วย Merge
 - วิเคราะห์และแก้ไข Merge Conflict
 - พักงานชั่วคราวและนำกลับมาทำต่อด้วย Git Stash
-- ฝึก workflow ที่ใกล้เคียงกับการทำงานในโปรเจกต์จริง
+- ฝึก Local Git workflow ที่เป็นพื้นฐานของการทำงานในโปรเจกต์จริง
 
-## เนื้อหา Workshop
+## บทเรียนที่พร้อมใช้งาน
 
 | บท | หัวข้อ | แนวคิดสำคัญ |
 |:--:|---|---|
@@ -41,7 +59,7 @@ Repository นี้รวบรวมแบบฝึกหัด Git สำห�
 | 06 | [ย้อนการเปลี่ยนแปลงอย่างปลอดภัย](workshop06_restore_reset_revert/DOCS.md) | ความแตกต่างระหว่าง `restore`, `reset` และ `revert` |
 | 07 | [แยกงานด้วย Git Branch](workshop07_branch/DOCS.md) | `branch`, `switch`, `merge` และ Feature Branch Workflow |
 | 08 | [แก้ไข Merge Conflict](workshop08_merge_conflict/DOCS.md) | อ่าน Conflict Marker, แก้ไฟล์ และยืนยันผลลัพธ์ |
-| 09 | [พักงานชั่วคราวด้วย Git Stash](workshop09_stash/) | `stash`, `list`, `apply`, `pop` และการสลับงานด่วน |
+| 09 | [พักงานชั่วคราวด้วย Git Stash](workshop09_stash/DOCS.md) | `stash`, `list`, `apply`, `pop` และการสลับงานด่วน |
 
 ## ความต้องการเบื้องต้น
 
@@ -61,7 +79,7 @@ git --version
 1. Clone หรือดาวน์โหลด Repository นี้มาไว้ในเครื่อง
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/highjunesolution/git-workshop.git
    cd git-workshop
    ```
 
@@ -104,7 +122,7 @@ git-workshop/
 └── workshop09_stash/
 ```
 
-ภายในแต่ละโฟลเดอร์มีเอกสารประกอบหรือไฟล์ตัวอย่างสำหรับใช้ทดลองใน Workshop นั้น ๆ
+แต่ละโฟลเดอร์มีเอกสาร `DOCS.md` และไฟล์ตัวอย่างสำหรับใช้ทดลองใน Workshop นั้น ๆ
 
 ## Quick Reference
 
