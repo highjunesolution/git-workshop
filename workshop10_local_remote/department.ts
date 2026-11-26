@@ -1,0 +1,3 @@
+function getDepartment() {
+    return "IT"
+}
