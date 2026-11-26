@@ -1,3 +1,3 @@
 function getDepartment() {
-    return "IT"
+    return "IT Department"
 }
