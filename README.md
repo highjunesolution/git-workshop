@@ -7,8 +7,8 @@
 <p align="center">
   <img alt="Git" src="https://img.shields.io/badge/Git-Workshop-F05032?logo=git&logoColor=white">
   <img alt="Hands-on" src="https://img.shields.io/badge/Learning-Hands--on-2563EB">
-  <img alt="Available workshops" src="https://img.shields.io/badge/Workshops-9%20of%2025-16A34A">
-  <img alt="Available phases" src="https://img.shields.io/badge/Phases-3%20of%208-7C3AED">
+  <img alt="Available workshops" src="https://img.shields.io/badge/Workshops-11%20of%2025-16A34A">
+  <img alt="Completed phases" src="https://img.shields.io/badge/Phases-3%20of%208-7C3AED">
 </p>
 
 ---
@@ -17,7 +17,9 @@
 
 Repository นี้เป็นหลักสูตร Git แบบลงมือปฏิบัติสำหรับผู้เริ่มต้น วางแผนเนื้อหาไว้ทั้งหมด **25 Workshop ใน 8 Phase** ตั้งแต่พื้นฐาน Git ไปจนถึง GitHub, การทำงานร่วมกับทีม, Release และหัวข้อระดับ Professional
 
-ปัจจุบันมีบทเรียนพร้อมใช้งานถึง **Workshop 09** ครอบคลุม 3 Phase แรกและพื้นฐานการใช้ Git บน Local Repository ได้แก่ Commit, Diff, Staging, Undo, Branch, Merge Conflict และ Stash ส่วนเนื้อหา Remote Repository และ workflow ขั้นสูงอยู่ในแผนพัฒนาลำดับถัดไป
+ปัจจุบันมีบทเรียนพร้อมใช้งานถึง **Workshop 11** ครอบคลุม 3 Phase แรกและเริ่มเข้าสู่ Phase 4 ตั้งแต่พื้นฐาน Local Git ได้แก่ Commit, Diff, Staging, Undo, Branch, Merge Conflict และ Stash ไปจนถึงการเชื่อม GitHub, ตั้งค่า Remote และแลกเปลี่ยนงานด้วย Fetch, Pull และ Push
+
+บทเรียนล่าสุดมี Lab จำลอง Developer สองคนผ่าน Repository สองโฟลเดอร์ พร้อมแผนภาพอธิบาย Local Branch, Remote-tracking Branch และการรวมงานเมื่อ History แยกสาย ส่วน Pull Request, Code Review และ workflow ขั้นสูงอยู่ในแผนพัฒนาลำดับถัดไป
 
 ดูขอบเขตหลักสูตรทั้งหมดได้ที่ [Git Roadmap](context.md)
 
@@ -28,13 +30,13 @@ Repository นี้เป็นหลักสูตร Git แบบลงม�
 | 1 | 01–03 | พื้นฐาน Git, Diff และ Commit ที่มีคุณภาพ | **พร้อมเรียน** |
 | 2 | 04–06 | Staging, `.gitignore` และการย้อนการเปลี่ยนแปลง | **พร้อมเรียน** |
 | 3 | 07–09 | Branch, Merge Conflict และ Stash | **พร้อมเรียน** |
-| 4 | 10–12 | GitHub, Remote Repository และ Pull Request | ตาม Roadmap |
+| 4 | 10–12 | GitHub, Remote Repository และ Pull Request | **พร้อมเรียน 10–11**; บท 12 ตาม Roadmap |
 | 5 | 13–16 | Git กับ Node.js, Prisma, ASP.NET และ Legacy Project | ตาม Roadmap |
 | 6 | 17–19 | Team Workflow, Tag, Release และ Hotfix | ตาม Roadmap |
 | 7 | 20–22 | การแก้ข้อผิดพลาด Git ที่พบบ่อย | ตาม Roadmap |
 | 8 | 23–25 | History, Rebase และ GitHub Actions | ตาม Roadmap |
 
-> **Current milestone:** เรียนรู้ workflow ฝั่ง Local Git ครบตั้งแต่การสร้าง Commit ไปจนถึงการพักงานชั่วคราวด้วย Stash
+> **Current milestone:** เชื่อม Local Git กับ GitHub และฝึกรับ–ส่ง Commit ระหว่างผู้พัฒนาด้วย Fetch, Pull และ Push แล้ว บทถัดไปคือ Pull Request + Code Review
 
 ## ผลลัพธ์จากบทเรียนปัจจุบัน
 
@@ -46,6 +48,10 @@ Repository นี้เป็นหลักสูตร Git แบบลงม�
 - วิเคราะห์และแก้ไข Merge Conflict
 - พักงานชั่วคราวและนำกลับมาทำต่อด้วย Git Stash
 - ฝึก Local Git workflow ที่เป็นพื้นฐานของการทำงานในโปรเจกต์จริง
+- เชื่อม Remote Repository และตั้ง upstream ด้วย `git push -u`
+- แยกความต่างระหว่าง `main`, `origin/main` และ Branch จริงบน GitHub
+- ตรวจสอบงานใหม่ด้วย Fetch, รวมงานด้วย Pull และส่ง Commit ด้วย Push
+- อ่านสถานะ Ahead, Behind และ Diverged พร้อมฝึกรวม History เมื่อ Push ถูก Reject
 
 ## บทเรียนที่พร้อมใช้งาน
 
@@ -60,6 +66,10 @@ Repository นี้เป็นหลักสูตร Git แบบลงม�
 | 07 | [แยกงานด้วย Git Branch](workshop07_branch/DOCS.md) | `branch`, `switch`, `merge` และ Feature Branch Workflow |
 | 08 | [แก้ไข Merge Conflict](workshop08_merge_conflict/DOCS.md) | อ่าน Conflict Marker, แก้ไฟล์ และยืนยันผลลัพธ์ |
 | 09 | [พักงานชั่วคราวด้วย Git Stash](workshop09_stash/DOCS.md) | `stash`, `list`, `apply`, `pop` และการสลับงานด่วน |
+| 10 | [เชื่อม Local Git กับ GitHub](workshop10_local_remote/DOCS.md) | `remote`, `origin`, `clone`, `push -u` และ Upstream Tracking |
+| 11 | [รับ–ส่งงานด้วย Fetch / Pull / Push](workshop11_pull_fetch_push/DOCS.md) | `fetch`, `pull`, `push`, Ahead / Behind / Diverged และ Lab Developer A/B |
+
+**บทถัดไปตาม Roadmap:** Workshop 12 — Pull Request + Code Review
 
 ## ความต้องการเบื้องต้น
 
@@ -67,6 +77,7 @@ Repository นี้เป็นหลักสูตร Git แบบลงม�
 - Terminal เช่น PowerShell, Command Prompt, Terminal หรือ Git Bash
 - Text editor ที่ถนัด เช่น [Visual Studio Code](https://code.visualstudio.com/)
 - ความรู้พื้นฐานเกี่ยวกับการใช้คำสั่งใน Terminal เล็กน้อย
+- บัญชี GitHub และอินเทอร์เน็ตสำหรับ Workshop 10–11 รวมถึง Repository สำหรับฝึกที่สามารถ Push ได้
 
 ตรวจสอบว่า Git พร้อมใช้งานด้วยคำสั่ง:
 
@@ -106,11 +117,15 @@ git --version
 - พิมพ์คำสั่งด้วยตนเองแทนการคัดลอกทั้งหมด เพื่อให้คุ้นเคยกับรูปแบบคำสั่ง
 - ใช้ `git status`, `git diff` และ `git log --oneline` ตรวจสอบผลลัพธ์เป็นระยะ
 - หากผลลัพธ์ไม่ตรงกับเอกสาร ให้หยุดตรวจสอบสถานะก่อนใช้คำสั่งถัดไป
+- ใน Workshop 10–11 ให้ตรวจสอบ Remote และ Branch ปัจจุบันก่อนรับ–ส่งงาน
+- เปิด Workshop 11 บน GitHub หรือ Markdown Preview ที่รองรับ Mermaid เพื่อดูแผนภาพประกอบ
 
 ## โครงสร้าง Repository
 
 ```text
 git-workshop/
+├── README.md
+├── context.md                     # Roadmap ทั้ง 25 Workshop
 ├── workshop01_basic/
 ├── workshop02_git_diff/
 ├── workshop03_commit_message/
@@ -119,7 +134,9 @@ git-workshop/
 ├── workshop06_restore_reset_revert/
 ├── workshop07_branch/
 ├── workshop08_merge_conflict/
-└── workshop09_stash/
+├── workshop09_stash/
+├── workshop10_local_remote/
+└── workshop11_pull_fetch_push/
 ```
 
 แต่ละโฟลเดอร์มีเอกสาร `DOCS.md` และไฟล์ตัวอย่างสำหรับใช้ทดลองใน Workshop นั้น ๆ
@@ -136,6 +153,14 @@ git-workshop/
 | สร้างและสลับไป Branch ใหม่ | `git switch -c <branch>` |
 | รวม Branch | `git merge <branch>` |
 | พักงานชั่วคราว | `git stash push -u -m "message"` |
+| ดู Remote และ URL | `git remote -v` |
+| เชื่อม Remote Repository | `git remote add origin <url>` |
+| Clone Repository | `git clone <url>` |
+| ดาวน์โหลดข้อมูล Remote โดยยังไม่รวมงาน | `git fetch origin` |
+| รับงานจาก Remote แล้วรวมเข้า Branch ปัจจุบัน | `git pull` |
+| Push ครั้งแรกและตั้ง Upstream | `git push -u origin <branch>` |
+| Push หลังตั้ง Upstream แล้ว | `git push` |
+| ดู Branch และ Upstream | `git branch -vv` |
 
 ---
 
